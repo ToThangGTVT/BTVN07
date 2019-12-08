@@ -4,9 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
         Manager manager = new Manager();
-        String username = "BcB";
+        String username = "BBB";
         String password = "2345";
         manager.login(username, password);
-        manager.doiMatKhau(username, password, "11111");
+        manager.doiMatKhau(password, "11111");
+        manager.xoaNguoiDung("11111");
+        manager.showAll();
     }
 }

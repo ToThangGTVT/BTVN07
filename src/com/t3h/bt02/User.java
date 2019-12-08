@@ -7,7 +7,6 @@ public class User {
     private String dateOfBirth;
     private int age;
     private String job;
-    private boolean daDangNhap;
 
     public User(String userName, String password, String name, String dateOfBirth, int age, String job) {
         this.userName = userName;
@@ -26,16 +25,8 @@ public class User {
         return password;
     }
 
-    public boolean isDaDangNhap() {
-        return daDangNhap;
-    }
-
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public void setDaDangNhap(boolean daDangNhap) {
-        this.daDangNhap = daDangNhap;
     }
 
     public void showInfor() {
@@ -53,5 +44,10 @@ public class User {
             return false;
         }
         return true;
+    }
+
+    @Override
+    public String toString(){
+        return name+"_"+userName+"_"+password;
     }
 }
